@@ -23,5 +23,7 @@ public class Main {
             int N = sc.nextInt();
             System.out.println("Fib(" + N + ") = " + fib(N));
         }
+
+        sc.close();
     }
 }
