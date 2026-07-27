@@ -1,10 +1,9 @@
-package exercises.beginner.p1187;
+package exercises.beginner.p1188;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         char operation = scanner.next().charAt(0);
@@ -20,9 +19,9 @@ public class Main {
         double sum = 0.0;
         int count = 0;
 
-        // Sum elements strictly inside the top region
-        for (int i = 7; i <= 11; i++) {
-            for (int j = i + 1; j <= 10 - i; j++) {
+        // Iterate over the Inferior Area (rows 7 through 11)
+        for (int i = 7; i < 12; i++) {
+            for (int j = 12 - i; j < i; j++) {
                 sum += M[i][j];
                 count++;
             }
